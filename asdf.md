@@ -93,3 +93,4 @@ You can achieve the more information of asdf command when running the `asdf --he
 **asdf plugin list all**                    List plugins registered on asdf-plugins repository with URLs
 
 **asdf install <name> <version>**           Install a specific version of a package
+
