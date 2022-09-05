@@ -113,6 +113,8 @@ It should be provided by the community or by an infrastructure vendor.
 
 ### Schema Registry
 
+The Kafka brokers themselves read and write data in byte arrays, so in this context, any format can be used. This is as long as your producers know how to serialize the data and your consumer has the related deserializer knowledge anything can be used. However to have better data guarantees a concept of a Schema Registry is introduced in the Kafka ecosystem. This ensures that all data written to a topic by a producer conforms to a particular schema and it means that a consumer can then use the same schema to read the data.
+
 ![](./images/schema-registry.png)
 
 Schema Registry is a standalone server process that runs on a machine external to the Kafka brokers.
